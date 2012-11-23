@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E42D2761656DF3300ED0031 /* MacDrummerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E42D2751656DF3300ED0031 /* MacDrummerView.m */; };
 		8E833803164F191000B81E9F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E833802164F191000B81E9F /* Cocoa.framework */; };
 		8E83380D164F191000B81E9F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E83380B164F191000B81E9F /* InfoPlist.strings */; };
 		8E83380F164F191000B81E9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E83380E164F191000B81E9F /* main.m */; };
@@ -17,6 +18,10 @@
 		8E833822164F191300B81E9F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E833802164F191000B81E9F /* Cocoa.framework */; };
 		8E83382A164F191300B81E9F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E833828164F191300B81E9F /* InfoPlist.strings */; };
 		8E83382D164F191300B81E9F /* MacDrummerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E83382C164F191300B81E9F /* MacDrummerTests.m */; };
+		8ED7D2D0165FE07300874206 /* VVBasics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED7D2CE165FE07300874206 /* VVBasics.framework */; };
+		8ED7D2D1165FE07300874206 /* VVOSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED7D2CF165FE07300874206 /* VVOSC.framework */; };
+		8ED7D2D5165FE4AF00874206 /* VVBasics.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8ED7D2CE165FE07300874206 /* VVBasics.framework */; };
+		8ED7D2D6165FE4B100874206 /* VVOSC.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8ED7D2CF165FE07300874206 /* VVOSC.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +34,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8ED7D2D4165FE46700874206 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8ED7D2D5165FE4AF00874206 /* VVBasics.framework in CopyFiles */,
+				8ED7D2D6165FE4B100874206 /* VVOSC.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		8E42D2741656DF3300ED0031 /* MacDrummerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacDrummerView.h; sourceTree = "<group>"; };
+		8E42D2751656DF3300ED0031 /* MacDrummerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacDrummerView.m; sourceTree = "<group>"; };
 		8E8337FE164F191000B81E9F /* MacDrummer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacDrummer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E833802164F191000B81E9F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		8E833805164F191000B81E9F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -49,6 +70,8 @@
 		8E833829164F191300B81E9F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8E83382B164F191300B81E9F /* MacDrummerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacDrummerTests.h; sourceTree = "<group>"; };
 		8E83382C164F191300B81E9F /* MacDrummerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MacDrummerTests.m; sourceTree = "<group>"; };
+		8ED7D2CE165FE07300874206 /* VVBasics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VVBasics.framework; sourceTree = "<group>"; };
+		8ED7D2CF165FE07300874206 /* VVOSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VVOSC.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +80,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E833803164F191000B81E9F /* Cocoa.framework in Frameworks */,
+				8ED7D2D0165FE07300874206 /* VVBasics.framework in Frameworks */,
+				8ED7D2D1165FE07300874206 /* VVOSC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +106,7 @@
 				8E8337FF164F191000B81E9F /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		8E8337FF164F191000B81E9F /* Products */ = {
 			isa = PBXGroup;
@@ -94,6 +120,8 @@
 		8E833801164F191000B81E9F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8ED7D2CE165FE07300874206 /* VVBasics.framework */,
+				8ED7D2CF165FE07300874206 /* VVOSC.framework */,
 				8E833802164F191000B81E9F /* Cocoa.framework */,
 				8E833820164F191300B81E9F /* SenTestingKit.framework */,
 				8E833804164F191000B81E9F /* Other Frameworks */,
@@ -117,6 +145,8 @@
 				8E833814164F191100B81E9F /* MacDrummerAppDelegate.h */,
 				8E833815164F191100B81E9F /* MacDrummerAppDelegate.m */,
 				8E833817164F191100B81E9F /* MainMenu.xib */,
+				8E42D2741656DF3300ED0031 /* MacDrummerView.h */,
+				8E42D2751656DF3300ED0031 /* MacDrummerView.m */,
 				8E833809164F191000B81E9F /* Supporting Files */,
 			);
 			path = MacDrummer;
@@ -163,6 +193,7 @@
 				8E8337FA164F191000B81E9F /* Sources */,
 				8E8337FB164F191000B81E9F /* Frameworks */,
 				8E8337FC164F191000B81E9F /* Resources */,
+				8ED7D2D4165FE46700874206 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -264,6 +295,7 @@
 			files = (
 				8E83380F164F191000B81E9F /* main.m in Sources */,
 				8E833816164F191100B81E9F /* MacDrummerAppDelegate.m in Sources */,
+				8E42D2761656DF3300ED0031 /* MacDrummerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,9 +410,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MacDrummer/MacDrummer-Prefix.pch";
 				INFOPLIST_FILE = "MacDrummer/MacDrummer-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -390,9 +427,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MacDrummer/MacDrummer-Prefix.pch";
 				INFOPLIST_FILE = "MacDrummer/MacDrummer-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -447,6 +489,7 @@
 				8E833832164F191300B81E9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8E833833164F191300B81E9F /* Build configuration list for PBXNativeTarget "MacDrummerTests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +498,7 @@
 				8E833835164F191300B81E9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
