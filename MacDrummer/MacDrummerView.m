@@ -29,8 +29,6 @@
     // [self initializeDefaultOutputAu];
 }
 
-
-
 - (void)drawRect:(NSRect)dirtyRect
 {
     // Drawing code here.
@@ -45,8 +43,8 @@
     [super mouseDown:theEvent];
 }
 
-- (void)touchesBeganWithEvent:(NSEvent *)event {
-    NSLog(@"Ricevuto touchesBegan - si comincia - %@", event);
+- (void)logEvents:(NSEvent *)event: (NSString *)phase {
+    NSLog(@"Ricevuto %@ - %@", phase, event);
     NSSet *touches = [event touchesMatchingPhase:NSTouchPhaseBegan inView:self];
 
     for (NSTouch *touch in touches) {
@@ -56,15 +54,18 @@
                                 pow((fraction.y - 0.5), 2));
         NSLog(@"%s: Finger is touching %g of center", __func__, distance);
     }
+};
 
+- (void)touchesBeganWithEvent:(NSEvent *)event {
+    [self logEvents:event : @"began"];
 };
 
 - (void)touchesMovedWithEvent:(NSEvent *)event {
-    //    NSLog(@"Ricevuto touchesMoved - ci si muove - %@", event);
+    [self logEvents:event : @"moved"];
 };
 
 - (void)touchesEndedWithEvent:(NSEvent *)event {
-    //    NSLog(@"Ricevuto touchesEnded - si finisce - %@", event);
+    [self logEvents:event : @"ended"];
 };
 - (void)touchesCancelledWithEvent:(NSEvent *)event {
     NSLog(@"Ricevuto touchesCancelled - ma anche sti cazzi");

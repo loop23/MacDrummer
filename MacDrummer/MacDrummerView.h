@@ -10,4 +10,6 @@
 
 @interface MacDrummerView : NSView
 
+- (void)logEvents:(NSEvent *)event: (NSString *)phase;
+
 @end
