@@ -7,9 +7,13 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <VVOSC/OSCManager.h>
 
-@interface MacDrummerView : NSView
+@interface MacDrummerView : NSView {
+    OSCManager *manager;
+    OSCOutPort *outPort;
+}
 
-- (void)logEvents:(NSEvent *)event: (NSString *)phase;
-
+- (void)logEvents:(NSEvent *)theEvent :(NSString *)phase;
+- (CGFloat)distanceFromCenter:(NSTouch *)touch;
 @end
