@@ -11,10 +11,11 @@ a bit intimidating.
 
 ## Notes
 
-This is my first osx app. It doesn't yet generate OSC messages, but if
-you run it and tap on the trackpad you get to know in the app log how
-far you did tap from the center.  Not a big start, but that's
-something!
+This is my first osx app and it probably shows;
+It just about started generating OSC messages, namely /MacDrummer/DrumHit/1 with
+a float parameter ranging from 0 to about 0.7
+
+I'm beginning work on the SuperCollider part.
 
 ## Licence
 
