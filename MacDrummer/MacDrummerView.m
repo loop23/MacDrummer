@@ -26,7 +26,7 @@
         //[manager createNewInputForPort:1234];
 
         // create an output so i can send OSC data to myself
-        outPort = [manager createNewOutputToAddress:@"127.0.0.1" atPort:1234];
+        outPort = [manager createNewOutputToAddress:@"127.0.0.1" atPort:57120];
     }
     return self;
 }
